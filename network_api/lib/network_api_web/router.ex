@@ -2,6 +2,7 @@ defmodule NetworkApiWeb.Router do
   use NetworkApiWeb, :router
 
   pipeline :api do
+    plug CORSPlug, origin: "http://localhost:8000"
     plug :accepts, ["json"]
   end
 
