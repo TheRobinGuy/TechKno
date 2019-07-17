@@ -41,7 +41,7 @@ defmodule NodesApiWeb.Endpoint do
     signing_salt: "Xw+JEpyi"
 
   plug Corsica,
-    origins: "http://localhost:8080",
+    origins: "http://localhost:8000",
     log: [rejected: :error, invalid: :warn, accepted: :debug]
 
   plug NodesApiWeb.Router
